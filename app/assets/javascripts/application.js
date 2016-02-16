@@ -1,0 +1,20 @@
+//= require jquery
+//= require jquery.turbolinks
+//= require bootstrap-sprockets
+//= require jquery_ujs
+//= require turbolinks
+//= require plugins/jquery.easing.min
+//= require plugins/classie
+//= require plugins/cbpAnimatedHeader
+//= require plugins/owl-carousel/owl.carousel
+//= require plugins/jquery.magnific-popup/jquery.magnific-popup.min
+//= require plugins/background/core
+//= require plugins/background/transition
+//= require plugins/background/background
+//= require plugins/jquery.mixitup
+//= require plugins/wow/wow.min
+//= require contact_me
+//= require plugins/jqBootstrapValidation
+//= require vitality
+//= require_tree .
+

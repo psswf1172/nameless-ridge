@@ -1,0 +1,49 @@
+<div class="user-show-page">
+  <div class="container">
+    <table class="table table-hover">
+    <thead>
+      <tr>
+      <div class="container table">
+          <div class="col-md-4">
+          <h2 class="center">Armoire Users</h2>
+          </div>
+
+      <div class="col-md-4"></div>
+          <div class="row">
+      <div class="col-xs-12">
+      <div class="table-responsive">
+        <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+            <th>User Name</th>
+            <th>Outfits</th>
+            <th>Followers</th>
+            <th>Following</th>
+            <th>Follow Armoire?</th>
+            </tr>
+          </thead>
+
+        <tr><% @users.each do |user| %>
+        <div class="table stuff">
+          <td><%= link_to user.username, user %></td>
+          <td><%= user.outfits.count %></td>
+          <td><%= user.followers_count %></td>
+          <td><%= user.following_count %></td>
+          <td>
+            <div class="btn-1" id="follow-unfollow-<%= user.id %>">
+               <%= render partial: 'follow_unfollow', locals: {user: user} %>
+            </div>
+          </td>
+        </div><!--closing table stuff-->
+        </tr>
+        <% end %>
+        </tr>
+        </table>
+      
+      </div>
+      </div><!--end of .table-responsive-->
+  </div>
+</div>
+
+  </div>
+</div>

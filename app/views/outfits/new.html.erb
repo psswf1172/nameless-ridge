@@ -1,0 +1,16 @@
+<div class="view_form">
+  <h1>Let's Make An Outfit!</h1>
+  <%= render 'form' %>
+
+<% if current_user.garments.present? && current_user.shoes.present? && current_user.accessories.present? %>
+
+  <%= button_to "View Your Armoire", outfits_path %>
+
+<% else %>
+
+  <%= button_to "Add Garment", new_garment_path %>
+  <%= button_to "Add Shoe", new_shoe_path %>
+  <%= button_to "Add Accessory", new_accessory_path %>
+
+<% end %>
+</div>

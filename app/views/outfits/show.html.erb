@@ -1,0 +1,47 @@
+<div class="view_form">
+<h1>Presenting.. Your New Outfit!</h1>
+
+<div class="container">
+  <div class="row">
+
+ <%= form_tag url_for(:controller => 'outfits', :action => 'update'), :method => 'put', remote: true do %>
+
+     <%= text_field_tag 'name', nil, placeholder: 'Enter an outfit name...' %>
+      <%= submit_tag 'Name Your Outfit' %>
+  <% end %>
+
+    <div class="col-md-4">
+      <h2><%= @outfit.garment.try(:name) %></h2>
+      <div class="image">
+        <p>
+          <img width="275" height="225" src="<%= @outfit.garment.try(:image)%>">
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2><%= @outfit.shoe.name %></h2>
+      <div class="image">
+        <p>
+          <img width="300" height="225" src="<%= @outfit.shoe.image%>">
+        </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2><%= @outfit.accessory.name %></h2>
+      <div class="image">
+        <p>
+          <img width="300" height="225" src="<%= @outfit.accessory.image%>">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <%= link_to pending_outfits_path, class: "btn btn-default", id: "pending_outfit" do %>
+      <span>Keep or Reject This Outfit?</span>
+  <% end %>
+
+
+</div>

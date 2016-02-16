@@ -1,0 +1,324 @@
+$btn-primary-bg: #FF5640;
+$gray-medium-light: #eaeaea;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+@import "plugins/owl-carousel/owl.carousel.css";
+@import "plugins/owl-carousel/owl.theme.css";
+@import "plugins/owl-carousel/owl.transitions.css";
+@import "plugins/magnific-popup.css";
+@import "plugins/background.css";
+@import "plugins/animate.css";
+@import "vitality-pink.css";
+
+$transition-duration: 0.8s;
+$transition-easing: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$bounce-easing: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$closed-width: 200px;
+$closed-height: 80px;
+$opened-width: 400px;
+$opened-height: 160px;
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+
+
+*{font-family:Roboto;}
+
+
+.btn-1.is-open ~ .description {
+  opacity: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: black;
+}
+
+.btn-1 {
+  display: block;
+  position: relative;
+  width: $closed-width;
+  height: $closed-height;
+  transition: width $transition-duration $transition-easing,
+              height $transition-duration $transition-easing,
+              transform $transition-duration $bounce-easing;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  text-align: center;
+}
+
+.btn-front {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: $closed-height;
+  background-color: lighten(#EEB8A0, 2%);
+  color: #fff;
+  cursor: pointer;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+  transition: background 0.15s ease,
+              line-height $transition-duration $transition-easing;
+}
+.btn-front:hover {
+  background-color: lighten(#EEB8A0, 10%);
+}
+.btn-1.is-open .btn-front {
+  pointer-events: none;
+  line-height: $opened-height;
+}
+
+.btn-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  color: #222;
+  transform: translateZ(-2px) rotateX(180deg);
+  overflow: hidden;
+  transition: box-shadow $transition-duration ease;
+}
+.btn-back p {
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+.table tbody tr, th {
+  font-size: 1.2em;
+  text-align: center;
+  height: 1px;
+}
+
+.btn-back button {
+  padding: 12px 20px;
+  width: 30%;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+  transition: background 0.15s ease;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.yes {
+    background-color: #2196F3;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten(#2196F3, 10%);
+    }
+  }
+
+  &.no {
+    color: #2196F3;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+
+.btn-1    .is-open .btn-back {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.btn-1[data-direction="left"] .btn-back,
+.btn-1[data-direction="right"] .btn-back {
+  transform: translateZ(-2px) rotateY(180deg);
+}
+
+.btn-1.is-open {
+  width: $opened-width;
+  height: $opened-height;
+}
+
+.btn-1[data-direction="top"].is-open {
+  transform: rotateX(180deg);
+}
+
+.btn-1[data-direction="right"].is-open {
+  transform: rotateY(180deg);
+}
+
+.btn[data-direction="bottom"].is-open {
+  transform: rotateX(-180deg);
+}
+
+.btn-1[data-direction="left"].is-open {
+  transform: rotateY(-180deg);
+}
+
+#phone {
+  font-size: 7em;
+  color: #fff;
+  margin-left: 36%;
+  margin-bottom: 15%;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+}
+.italic-h2 {
+    font-family: "adelle-sans",sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: #F06060;
+    margin-left: 40%;
+    font-size: 1.8em;
+}
+
+.jumbotron p {
+  font-family: "adelle-sans",sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 2em 1em;
+
+}
+
+#armoire {
+  font-family: "adelle-sans",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #FFF;
+}
+
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: #ddd;
+}
+.widget {
+  width: 25%;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  color: #eee;
+  background: #1e5799;
+  background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 49%,#207cca 50%,#7db9e8 100%);
+  border-bottom: 2px solid #1e5799;
+  border-left: 1px solid #207cca;
+  border-right: 1px solid #207cca;
+  border-radius: 20px;
+  box-shadow: 0 0 8px -1px #555;
+  text-shadow: 1px 1px 5px #194372;
+  overflow: auto;
+}
+.date, .weather {
+  width:50%; 
+  float: left;
+  text-align: center;
+  min-height: 80px;
+}
+.date {
+  border-right: 1px solid #1e5799;
+  padding-right: 6%
+}
+.weather {
+  padding: 60px 0 0 6%;
+  border-left: 1px solid #7db9e8;
+}
+#day {
+  font-size: 2em;
+  display: block;
+  margin: 44px 0 1px 0;
+}
+
+#temp {
+  padding: 1% 1%;
+  margin: 1% 1%;
+}
+
+#forecast {
+  padding: 1% 1%;
+  margin: 1% 1%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: 60px;
+}
+
+.show-page {
+  padding-top: 10em;
+  padding-left: 15em;
+}
+
+.btn-default {
+  background-color: transparent;
+}
+
+.show_page_buttons {
+  padding-left: 15em;
+
+}
+
+.garment_page_buttons {
+  padding-left: 14em;
+}
+
+.view_form {
+  padding-top: 7em;
+  padding-left: 12em;
+}
+
+.outfit-buttons {
+  padding-left: 16em;
+}
+
+.outfits-form {
+  padding-bottom: 5em;
+}
+
+.user-show-page {
+  padding-top: 6em;
+  padding-left: 10em;
+  background-attachment:fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.edit_form{
+  padding-top: 10em;
+  padding-left: 20em;
+  background: url(http://79webdesign.co.uk/play/weatherSprite.png)32px 0 no-repeat;
+}
+#day {
+  font-size: 510%;
+  display: block;
+  margin: -10px 0 -12px 0;
+
+}

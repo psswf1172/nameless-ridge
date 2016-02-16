@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RubyCritic</title>
+    <link href="assets/stylesheets/application.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+    <link href="assets/stylesheets/prettify.custom_theme.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="project-header group">
+      <div class="container">
+        <h1 class="logo"><a href="overview.html" class="logo-link">RubyCritic</a></h1>
+        <nav class="project-nav">
+          <a href="overview.html" class="project-nav-item">Overview</a>
+          <a href="code_index.html" class="project-nav-item">Code</a>
+          <a href="smells_index.html" class="project-nav-item">Smells</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <table id="js-index-table" class="index-table sortable-table">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th class="numeric-cell" title="Number of times a file has changed">Churn</th>
+    <th class="numeric-cell" title="Overall amount of code in a file">Complexity</th>
+    <th class="numeric-cell" title="Amount of code that is similar to other code">Duplication</th>
+    <th class="numeric-cell">Smells</th>
+    
+      <th class="centered-cell">Rating</th>
+    
+  </tr>
+</thead>
+<tbody>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/accessories_controller.html">AccessoriesController</a>
+      </td>
+      <td class="numeric-cell">8</td>
+      <td class="numeric-cell">31</td>
+      <td class="numeric-cell">40</td>
+      <td class="numeric-cell">3</td>
+      
+        <td class="centered-cell"><span class="rating-b circled-text circle">B</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/application_controller.html">ApplicationController</a>
+      </td>
+      <td class="numeric-cell">6</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/garments_controller.html">GarmentsController</a>
+      </td>
+      <td class="numeric-cell">7</td>
+      <td class="numeric-cell">24</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/home_controller.html">HomeController</a>
+      </td>
+      <td class="numeric-cell">6</td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/outfits_controller.html">OutfitsController</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">15</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">2</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/sessions_controller.html">SessionsController</a>
+      </td>
+      <td class="numeric-cell">4</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/shoes_controller.html">ShoesController</a>
+      </td>
+      <td class="numeric-cell">7</td>
+      <td class="numeric-cell">31</td>
+      <td class="numeric-cell">40</td>
+      <td class="numeric-cell">3</td>
+      
+        <td class="centered-cell"><span class="rating-b circled-text circle">B</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/controllers/users_controller.html">UsersController</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">24</td>
+      <td class="numeric-cell">18</td>
+      <td class="numeric-cell">2</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/accessories_helper.html">AccessoriesHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/application_helper.html">ApplicationHelper</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">4</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">2</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/garments_helper.html">GarmentsHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/home_helper.html">HomeHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/outfits_helper.html">OutfitsHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/sessions_helper.html">SessionsHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/shoes_helper.html">ShoesHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/helpers/users_helper.html">UsersHelper</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">6</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">2</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/models/accessory.html">Accessory</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/models/garment.html">Garment</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/models/outfit.html">Outfit</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/models/shoe.html">Shoe</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="app/models/user.html">User</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/application.html">Armoire::Application</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/boot.html">Boot</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/environment.html">Environment</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/environments/development.html">Development</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/environments/production.html">Production</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/environments/test.html">Test</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/assets.html">Assets</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/backtrace_silencers.html">BacktraceSilencers</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/cookies_serializer.html">CookiesSerializer</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/filter_parameter_logging.html">FilterParameterLogging</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/inflections.html">Inflections</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/mime_types.html">MimeTypes</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/session_store.html">SessionStore</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/initializers/wrap_parameters.html">WrapParameters</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="config/routes.html">Routes</a>
+      </td>
+      <td class="numeric-cell">12</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128051428_create_users.html">CreateUsers</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">5</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">3</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128124549_add_index_to_users_email.html">AddIndexToUsersEmail</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128124612_add_password_digest_to_users.html">AddPasswordDigestToUsers</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128184342_create_garments.html">CreateGarments</a>
+      </td>
+      <td class="numeric-cell">4</td>
+      <td class="numeric-cell">11</td>
+      <td class="numeric-cell">33</td>
+      <td class="numeric-cell">5</td>
+      
+        <td class="centered-cell"><span class="rating-b circled-text circle">B</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128185722_create_shoes.html">CreateShoes</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">11</td>
+      <td class="numeric-cell">33</td>
+      <td class="numeric-cell">5</td>
+      
+        <td class="centered-cell"><span class="rating-b circled-text circle">B</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128185749_create_accessories.html">CreateAccessories</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">11</td>
+      <td class="numeric-cell">33</td>
+      <td class="numeric-cell">5</td>
+      
+        <td class="centered-cell"><span class="rating-b circled-text circle">B</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160128185827_create_outfits.html">CreateOutfits</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">2</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160129170841_add_user_to_garments.html">AddUserToGarments</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160129170857_add_user_to_accessories.html">AddUserToAccessories</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160129170911_add_user_to_shoes.html">AddUserToShoes</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/migrate/20160129170925_add_user_to_outfits.html">AddUserToOutfits</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/schema.html">Schema</a>
+      </td>
+      <td class="numeric-cell">13</td>
+      <td class="numeric-cell">55</td>
+      <td class="numeric-cell">132</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-c circled-text circle">C</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="db/seeds.html">Seeds</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/accessories_controller_test.html">AccessoriesControllerTest</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/garments_controller_test.html">GarmentsControllerTest</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/home_controller_test.html">HomeControllerTest</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">4</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/outfits_controller_test.html">OutfitsControllerTest</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/sessions_controller_test.html">SessionsControllerTest</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">4</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/shoes_controller_test.html">ShoesControllerTest</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/controllers/users_controller_test.html">UsersControllerTest</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">4</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/models/accessory_test.html">AccessoryTest</a>
+      </td>
+      <td class="numeric-cell">3</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/models/garment_test.html">GarmentTest</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/models/outfit_test.html">OutfitTest</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/models/shoe_test.html">ShoeTest</a>
+      </td>
+      <td class="numeric-cell">2</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/models/user_test.html">UserTest</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">1</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+    <tr>
+      <td>
+        <a href="test/test_helper.html">ActiveSupport::TestCase</a>
+      </td>
+      <td class="numeric-cell">1</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      <td class="numeric-cell">0</td>
+      
+        <td class="centered-cell"><span class="rating-a circled-text circle">A</span></td>
+      
+    </tr>
+  
+</tbody>
+</table>
+
+    </div>
+    <script src='assets/javascripts/jquery-2.1.0.js'></script>
+    <script src='assets/javascripts/jquery.tablesorter.js'></script>
+    <script src='assets/javascripts/jquery.floatThead-v1.2.7.js'></script>
+    <script src='assets/javascripts/jquery.timeago-v1.4.1.js'></script>
+    <script src='assets/javascripts/highcharts.src-4.0.1.js'></script>
+    <script src='assets/javascripts/jquery.scrollTo-1.4.11.js'></script>
+    <script src='assets/javascripts/prettify-4-Mar-2013.js'></script>
+    <script src='assets/javascripts/application.js'></script>
+  </body>
+</html>
